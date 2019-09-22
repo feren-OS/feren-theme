@@ -1,0 +1,597 @@
+@import url(third-party-APPLET-stylesheets/weather.css);
+@import url(third-party-APPLET-stylesheets/slingshot.css);
+@import url(third-party-APPLET-stylesheets/stopwatch.css);
+@import url(third-party-APPLET-stylesheets/zuromenu.css);
+@import url(/usr/share/themes/feren-dark/cinnamon/cinnamon.css);
+
+/* ===================================================================
+ * PopupMenu (popupMenu.js) 
+ * ===================================================================*/
+
+/* Fix the bricking of Popup Menu in Cinnamon 3.2 */
+.menu {
+	border-radius: 0px;
+	background-color: rgba(0,0,0,0.7);
+	border-width: 0px;
+	border-color: #c1c1c1;
+	color: #fff;
+	
+}
+
+.popup-menu {
+	border-radius: 0px;
+	background-color: rgba(0,0,0,0.7);
+	border-width: 0px;
+	border-color: #c1c1c1;
+	color: #fff;
+        min-width: 200px;
+        font-size: 9.5pt;
+	
+}
+.popup-menu {
+	color: #fff;
+        min-width: 200px;
+        font-size: 9.5pt;
+}
+.popup-submenu-menu-item:open {
+	background-color: #005fe5;
+        color: #fff;
+        font-weight: normal;
+        font-size: 10pt;
+}
+.popup-sub-menu {
+        background-color: rgba(2,2,2,1);
+        border: 1px solid #c1c1c1;
+        border-left: 0px;
+        border-right: 0px;
+}
+.popup-sub-menu .popup-menu-item:ltr {
+	padding-right: 0em;
+}
+.popup-sub-menu .popup-menu-item:rtl {
+	padding-left: 0em;
+}
+.popup-sub-menu StScrollBar {
+	padding: 4px;
+}
+.popup-sub-menu StScrollBar StBin#trough {
+	border-width: 0px;
+}
+.popup-sub-menu StScrollBar StBin#vhandle {
+	background-color: rgba(153,153,153,1);
+}
+.popup-sub-menu StScrollBar StBin#vhandle:hover {
+	background-color: rgba(102,102,102,1);
+}
+.popup-combo-menu {
+	border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 0em 0em;
+        font-size: 9.5pt;
+}
+/* The remaining popup-menu sizing is all done in ems, so that if you
+ * override .popup-menu.font-size, everything else will scale with it.
+ */
+.popup-menu-content {
+        padding: 1em 0em;
+}
+.popup-menu-item {
+	padding: .4em 1.75em;
+        spacing: 1em;
+	border: solid transparent;
+	border-top: 0px;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+.popup-menu-item:active {
+	background-color: #006aff;
+        color: #fff;
+}
+.popup-menu-item:insensitive {
+	color: #878787;
+}
+.popup-image-menu-item {
+}
+.popup-combobox-item {
+	spacing: 1em;
+}
+.popup-separator-menu-item {
+	background-color: #e9e9e9;
+	height: 1px;
+}
+.popup-alternating-menu-item:alternate {
+	font-weight: normal;
+}
+.popup-slider-menu-item {
+        height: 1.2em;
+        min-width: 15em;
+        -slider-height: 2px;
+        -slider-background-color: rgba(0,0,0,0.2);
+        -slider-border-color: transparent;
+        -slider-active-background-color: #006aff;
+        -slider-active-border-color: #006aff;
+        -slider-border-width: 1px;
+}
+
+.popup-device-menu-item {
+	spacing: .5em;
+}
+.popup-inactive-menu-item {
+	font-weight: normal;
+	color: #878787;
+}
+.popup-subtitle-menu-item {
+	font-weight: normal;
+}
+.popup-menu-icon {
+	icon-size: 1.14em;
+}
+/* Switches (to be used in menus) */
+.toggle-switch {
+	width: 64px;
+	height: 22px;
+}
+.toggle-switch-us {
+	background-image: url("toggle-off.svg");
+}
+.toggle-switch-us:checked {
+	background-image: url("toggle-on.svg");
+}
+.toggle-switch-intl {
+	background-image: url("toggle-off.svg");
+}
+.toggle-switch-intl:checked {
+	background-image: url("toggle-on.svg");
+}
+.nm-menu-item-icons {
+	spacing: .5em;
+}
+
+/* ===================================================================
+ * Panel (panel.js)
+ * ===================================================================*/
+
+#panel {
+    background-color: rgba(0,0,0,1);
+    box-shadow: inset 0 0px 0px #000;/*a little hack*/
+    color: white;
+    font-size: 10pt;
+    font-weight: normal;
+    height: 25px;
+    background-blur: 0;
+}
+
+.panel-transparent,
+#panel.panel-transparent,
+.panel-transparent #panelLeft,
+.panel-transparent #panelCenter,
+.panel-transparent #panelRight,
+#panel.panel-transparent:highlight,
+.panel-transparent-with-shadow,
+#panel.panel-transparent-with-shadow,
+.panel-transparent-with-shadow #panelLeft,
+.panel-transparent-with-shadow #panelCenter,
+.panel-transparent-with-shadow #panelRight,
+#panel.panel-transparent-with-shadow:highlight,
+.panel-semi-transparent,
+#panel.panel-semi-transparent,
+.panel-semi-transparent #panelLeft,
+.panel-semi-transparent #panelCenter,
+.panel-semi-transparent #panelRight,
+#panel.panel-semi-transparent:highlight {
+	border-image: none;
+	border: none;
+	box-shadow: none;
+	background-gradient-direction: vertical;
+	background-gradient-start: transparent;
+	background-gradient-end: transparent;
+	background: transparent;
+}
+
+.panel-transparent,
+.panel-bottom.panel-transparent,
+#panel.panel-transparent,
+#panel.panel-transparent:highlight,
+.panel-transparent-with-shadow,
+.panel-bottom.panel-transparent-with-shadow,
+#panel.panel-transparent-with-shadow,
+#panel.panel-transparent-with-shadow:highlight
+.panel-semi-transparent,
+.panel-bottom.panel-semi-transparent,
+#panel.panel-semi-transparent,
+#panel.panel-transparent:highlight {
+	background-gradient-direction: vertical;
+	background-gradient-start: transparent;
+	background-gradient-end: rgba(0,0,0,0.4);
+}
+
+.panel-transparent.panel-top,
+#panel.panel-transparent.panel-top,
+#panel.panel-transparent.panel-top:highlight,
+.panel-transparent.panel-left,
+#panel.panel-transparent.panel-left,
+#panel.panel-transparent.panel-left:highlight,
+.panel-transparent-with-shadow.panel-top,
+#panel.panel-transparent-with-shadow.panel-top,
+#panel.panel-transparent-with-shadow.panel-top:highlight,
+.panel-transparent-with-shadow.panel-left,
+#panel.panel-transparent-with-shadow.panel-left,
+#panel.panel-transparent-with-shadow.panel-left:highlight,
+.panel-semi-transparent.panel-top,
+#panel.panel-semi-transparent.panel-top,
+#panel.panel-semi-transparent.panel-top:highlight,
+.panel-semi-transparent.panel-left,
+#panel.panel-semi-transparent.panel-left,
+#panel.panel-semi-transparent.panel-left:highlight {
+	background-gradient-start: rgba(0,0,0,0.4);
+	background-gradient-end: transparent;
+}
+
+.panel-transparent.panel-right,
+#panel.panel-transparent.panel-right,
+#panel.panel-transparent.panel-right:highlight,
+.panel-transparent.panel-left,
+#panel.panel-transparent.panel-left,
+#panel.panel-transparent.panel-left:highlight,
+.panel-transparent-with-shadow.panel-right,
+#panel.panel-transparent-with-shadow.panel-right,
+#panel.panel-transparent-with-shadow.panel-right:highlight,
+.panel-transparent-with-shadow.panel-left,
+#panel.panel-transparent-with-shadow.panel-left,
+#panel.panel-transparent-with-shadow.panel-left:highlight,
+.panel-semi-transparent.panel-right,
+#panel.semi-panel-transparent.panel-right,
+#panel.semi-panel-transparent.panel-right:highlight,
+.panel-semi-transparent.panel-left,
+#panel.panel-semi-transparent.panel-left,
+#panel.panel-semi-transparent.panel-left:highlight {
+	background-gradient-direction: horizontal;
+}
+
+#panelLeft {
+    spacing: 4px;
+}
+
+#panelCenter {
+    spacing: 4px;
+}
+
+#panelLeft:dnd {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,0,0,0.4);
+    background-gradient-end: rgba(255,0,0,0.4);
+background-blur: 2.5;
+}
+#panelCenter:dnd {
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(0,255,0,0.4);
+	background-gradient-end: rgba(0,255,0,0.4);
+background-blur: 2.5;
+}
+#panelRight:dnd {
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(0,0,255,0.4);
+	background-gradient-end: rgba(0,0,255,0.4);
+background-blur: 2.5;
+}
+
+#panelLeft:ltr {
+    padding-right: 0px;
+}
+
+#panelLeft:rtl {
+    padding-left: 0px;
+}
+
+#panelRight:ltr {
+    padding-left: 0px;
+    spacing: 0px;
+}
+
+#panelRight:rtl {
+    padding-right: 0px;
+    spacing: 0px;
+}
+
+.panel-button,
+.panel-status-button {
+	-natural-hpadding: 5px;
+	-minimum-hpadding: 5px;
+	font-weight: normal;
+	color: #fff;
+	border: 0px solid rgba(255,255,255,0);
+	border-top: 0px;
+	border-bottom: 0px;
+	transition-duration: 200;
+}
+.panel-button:hover,
+.panel-status-button:hover {
+	border: 0px solid rgba(255,255,255,0);
+	border-top: 0px;
+	border-bottom: 0px;
+	color: white;
+	background-gradient-direction: vertical;
+	background-gradient-end: rgba(255,255,255,0.4);
+	background-gradient-start: rgba(255,255,255,0.4);
+}
+
+.panel-menu {
+	-boxpointer-gap: 4px
+}
+.popup-menu-item-dot {
+}
+.system-status-icon {
+	icon-size: 1.09em;
+}
+
+.panel-corner {
+    -panel-corner-radius: 0px;
+    -panel-corner-background-color: black;
+    -panel-corner-inner-border-width: 2px;
+    -panel-corner-inner-border-color: transparent;
+    -panel-corner-outer-border-width: 1px;
+    -panel-corner-outer-border-color: #536272;
+}
+
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus {
+    -panel-corner-inner-border-color: rgba(255,255,255,0.8);
+}
+
+#appMenu {
+    spacing: 4px;
+}
+
+.panel-button #appMenuIcon {
+    app-icon-bottom-clip: 1px;
+}
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon {
+    app-icon-bottom-clip: 2px;
+}
+
+.panel-button {
+    -natural-hpadding: 6px;
+    -minimum-hpadding: 2px;
+    font-weight: normal;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    transition-duration: 100;
+}
+
+.panel-button:hover {
+    color: white;
+    text-shadow: black 0px 2px 2px;
+}
+
+.panel-button:active,
+.panel-button:overview,
+.panel-button:focus {
+    
+}
+
+.panel-button:active > .system-status-icon,
+.panel-button:checked > .system-status-icon,
+.panel-button:focus > .system-status-icon {
+    icon-shadow: black 0px 2px 2px;
+}
+
+.panel-menu {
+    -boxpointer-gap: 4px
+}
+
+.popup-menu-item-dot {
+
+}
+
+.system-status-icon {
+    icon-size: 1.14em;
+}
+
+/* ###################################################################
+ * Cinnamon Specific Section 
+ * ###################################################################*/
+
+/* ===================================================================
+ * Menu (menu.js)
+ * ===================================================================*/
+
+.menu-favorites-box {
+	margin: auto;
+	padding: 9px;
+	border: 0px solid #bdc7d8;
+	border-radius: 2px;
+	background-color: transparent;
+}
+.menu-favorites-button {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.menu-favorites-button:hover {
+	color: white;
+        background-color: #006aff;
+	border-radius: 2px;
+}
+.menu-help-button {
+	padding-top: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+}
+.menu-help-button:hover {
+	color: white;
+	border: 1px solid #3b5998;
+	background-color: #006aff;
+}
+.menu-places-box {
+	width: 50px;
+	margin: auto;
+	padding: 10px;
+	border: 0px solid #666;
+}
+.menu-places-button {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.menu-categories-box {
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+.menu-applications-box {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+}
+.menu-application-button {
+	padding: 7px;
+}
+.menu-application-button:highlighted {
+	/* This style is used in menu application buttons for applications which were newly installed */
+	font-weight: normal;
+}
+.menu-application-button:hover,
+.menu-application-button-selected {
+	padding: 7px;
+	color: #fff;
+	background-color: #006aff;
+}
+.menu-application-button-selected:highlighted {
+	/* This style is used in menu application buttons for applications which were newly installed */
+	font-weight: normal;
+}
+.menu-application-button-label:ltr { 
+	padding-left: 5px;
+}
+.menu-application-button-label:rtl { 
+	padding-right: 5px;
+}
+.menu-place-cat-button-label:ltr {
+	padding-top: 4px;
+	padding-left: 5px;
+}
+.menu-place-cat-button-label:rtl {
+	padding-top: 4px;
+	padding-right: 5px;
+}
+.menu-category-button {
+	padding: 7px;
+        border-radius: 3px;
+}
+.menu-category-button-greyed {
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+	color: #878787;
+	font-style: italic;
+}
+.menu-category-button-selected {
+	padding: 7px;
+	color: #fff;
+	background-color: #006aff;
+}
+.menu-category-button-label:ltr {
+	padding-left: 5px;
+}
+.menu-category-button-label:rtl {
+	padding-right: 5px;
+
+}
+.menu-category-button-button:hover {
+}
+/* Name and description of the currently hovered item in the menu
+ * This appears on the bottom right hand corner of the menu*/
+.menu-selected-app-box {
+	padding-right: 30px;
+	padding-left: 28px;
+	text-align: right;
+}
+
+.menu-selected-app-box:rtl {
+	padding-top: 10px;
+	height: 30px;
+}
+
+.menu-selected-app-title {
+	font-weight: normal;
+}
+.menu-selected-app-description {
+	max-width: 150px;
+}
+.menu-search-box:ltr {
+	padding-left: 30px;
+}
+.menu-search-box:rtl {
+	padding-right: 30px;
+}
+#menu-search-entry {
+        border-radius: 0px;
+        border: 0px solid #bdc7d8;
+        color: #fff;
+        background-color: transparent;
+        caret-color: #006aff;
+        caret-size: 1px;
+        padding: 4px 8px;
+        height: 16px;
+        width: 250px;
+
+}
+#menu-search-entry:focus,
+#menu-search-entry:hover {
+        border-radius: 0px;
+        border: 0px solid #bdc7d8;
+        background-color: transparent;
+        selected-color: #fff;
+        caret-color: #006aff;
+        caret-size: 1px;
+        color: #000;
+
+}
+#menu-search-entry:hover {
+	transition-duration: 300;
+}
+#menu-search-entry:focus {
+        color: #fff;
+        transition-duration: 0;
+}
+.menu-search-entry-icon {
+	icon-size: 1em;
+	color: #fff;
+}
+/* Context menu (at the moment only for favorites) */
+.menu-context-menu {
+}
+
+/* GROUPED WINDOW LIST THEMEING */
+.grouped-window-list-thumbnail-menu {
+  border-radius: 0px;
+  background-color: rgba(0,0,0,0.7);
+  border-width: 0px;
+  border-color: #c1c1c1;
+  color: #fff;
+  padding: 10px; }
+  .grouped-window-list-thumbnail-menu > StBoxLayout {
+    padding: 4px; }
+  .grouped-window-list-thumbnail-menu .item-box {
+    padding: 10px;
+    border-radius: 2px;
+    spacing: 4px; }
+    .grouped-window-list-thumbnail-menu .item-box:outlined, .grouped-window-list-thumbnail-menu .item-box:selected {
+      padding: 8px;
+      background-color: rgba(255,255,255,0.2); }
+  .grouped-window-list-thumbnail-menu .thumbnail {
+    width: 256px; }
+  .grouped-window-list-thumbnail-menu .separator {
+    width: 1px;
+    background: rgba(255,255,255,0.2); }

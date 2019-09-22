@@ -1,0 +1,340 @@
+@import url(third-party-APPLET-stylesheets/weather.css);
+@import url(third-party-APPLET-stylesheets/slingshot.css);
+@import url(third-party-APPLET-stylesheets/stopwatch.css);
+@import url(third-party-APPLET-stylesheets/zuromenu.css);
+@import url(/usr/share/themes/feren/cinnamon/cinnamon.css);
+
+/*===================================================================
+ * Panel (panel.js)
+ * ===================================================================*/
+
+/*Provide Support For Transparent Panels*/
+#panel {
+    background-color: rgba(0,0,0,1);
+    box-shadow: inset 0 0px 0px #000;/*a little hack*/
+    color: white;
+    font-size: 10pt;
+    font-weight: normal;
+    height: 44px;
+    background-blur: 2.5;
+}
+
+.panel-transparent,
+#panel.panel-transparent, .panel-transparent-with-shadow, #panel.panel-transparent-with-shadow, .panel-semi-transparent, #panel.panel-semi-transparent {
+    box-shadow: inset 0 0px 0px #000;/*a little hack*/
+    color: white;
+    font-size: 10pt;
+    font-weight: normal;
+    height: 44px;
+    background-blur: 2.5;
+    background-color: transparent;
+}
+
+#panelRight {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-image: url('panel.png') 5 6 5 5;
+}
+
+#panelLeft {
+    padding-left: 6px;
+}
+
+#panelLeft .applet-box:first-child{
+    border-image: url('applet-box.png') 5 5 5 8;
+}
+
+#panelLeft {
+    spacing: 4px;
+}
+
+#panelCenter {
+    spacing: 4px;
+}
+
+#panelLeft:dnd {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,0,0,0.4);
+    background-gradient-end: rgba(255,0,0,0.4);
+background-blur: 2.5;
+}
+#panelCenter:dnd {
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(0,255,0,0.4);
+	background-gradient-end: rgba(0,255,0,0.4);
+background-blur: 2.5;
+}
+#panelRight:dnd {
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(0,0,255,0.4);
+	background-gradient-end: rgba(0,0,255,0.4);
+background-blur: 2.5;
+}
+
+#panelLeft:ltr {
+    padding-right: 0px;
+}
+
+#panelLeft:rtl {
+    padding-left: 0px;
+}
+
+#panelRight:ltr {
+    padding-left: 0px;
+    spacing: 0px;
+}
+
+#panelRight:rtl {
+    padding-right: 0px;
+    spacing: 0px;
+}
+
+.panel-button,
+.panel-status-button {
+	-natural-hpadding: 5px;
+	-minimum-hpadding: 5px;
+	font-weight: normal;
+	color: #fff;
+	border: 0px solid rgba(255,255,255,0);
+	border-top: 0px;
+	border-bottom: 0px;
+	transition-duration: 200;
+}
+.panel-button:hover,
+.panel-status-button:hover {
+	border: 0px solid rgba(255,255,255,0);
+	border-top: 0px;
+	border-bottom: 0px;
+	color: white;
+	background-gradient-direction: vertical;
+	background-gradient-end: rgba(255,255,255,0.4);
+	background-gradient-start: rgba(255,255,255,0.4);
+}
+
+.panel-menu {
+	-boxpointer-gap: 4px
+}
+.popup-menu-item-dot {
+}
+.system-status-icon {
+	icon-size: 1.09em;
+}
+
+.panel-corner {
+    -panel-corner-radius: 0px;
+    -panel-corner-background-color: black;
+    -panel-corner-inner-border-width: 2px;
+    -panel-corner-inner-border-color: transparent;
+    -panel-corner-outer-border-width: 1px;
+    -panel-corner-outer-border-color: #536272;
+}
+
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus {
+    -panel-corner-inner-border-color: rgba(255,255,255,0.8);
+}
+
+#appMenu {
+    spacing: 4px;
+}
+
+.panel-button #appMenuIcon {
+    app-icon-bottom-clip: 1px;
+}
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon {
+    app-icon-bottom-clip: 2px;
+}
+
+.panel-button {
+    -natural-hpadding: 6px;
+    -minimum-hpadding: 2px;
+    font-weight: normal;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    transition-duration: 100;
+}
+
+.panel-button:hover {
+    color: white;
+    text-shadow: black 0px 2px 2px;
+}
+
+.panel-button:active,
+.panel-button:overview,
+.panel-button:focus {
+    
+}
+
+.panel-button:active > .system-status-icon,
+.panel-button:checked > .system-status-icon,
+.panel-button:focus > .system-status-icon {
+    icon-shadow: black 0px 2px 2px;
+}
+
+.panel-menu {
+    -boxpointer-gap: 4px
+}
+
+.popup-menu-item-dot {
+
+}
+
+.system-status-icon {
+    icon-size: 1.14em;
+}
+
+/* ===================================================================
+ * Window list (windowList.js)
+ * ===================================================================*/
+.window-list-box {
+  spacing: 6px;
+  padding-left: 10px;
+  padding-top: 1px; }
+  .window-list-box.vertical {
+    spacing: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+.window-list-item-label {
+    font-weight: normal;
+    width: 15em;
+    min-width: 5px;
+}
+.window-list-item-box {
+  font-weight: normal;
+  background-image: none;
+  padding-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition-duration: 100;
+  color: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.54);
+}
+  .window-list-item-box.top, .window-list-item-box.bottom {
+    border-bottom-width: 2px; }
+    .window-list-item-box.top StLabel, .window-list-item-box.bottom StLabel {
+      padding-left: 2px; }
+  .window-list-item-box.right {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right-width: 2px; }
+    .window-list-item-box.right StBin {
+      padding-right: 0; }
+  .window-list-item-box.left {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-left-width: 2px; }
+    .window-list-item-box.left StBin {
+      padding-left: 1px; }
+  .window-list-item-box:hover, .window-list-item-box:groupFocus {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 1);
+}
+  .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 1); }
+  .window-list-item-box .progress {
+    background-color: rgba(0, 186, 85, 0.27);
+    border-color: rgba(0, 226, 125, 1); }
+.window-list-item-demands-attention {
+  background-color: rgba(255, 127, 0, 0.27);
+  border-color: rgba(255, 127, 0, 1); }
+.window-list-preview {
+  spacing: 6px;
+  border-radius: 3px;
+  color: #000;
+  border: 1px solid #d4d5db;
+  background-color: #F5F4F3;
+  padding: 10px; }
+
+/* GROUPED WINDOW LIST THEMEING */
+.grouped-window-list-item-label {
+  font-weight: normal;
+  width: 15em;
+  min-width: 5px; }
+.grouped-window-list-item-box {
+  font-weight: normal;
+  background-image: none;
+  padding-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition-duration: 100;
+  border-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.6); }
+  .grouped-window-list-item-box.top, .grouped-window-list-item-box.bottom {
+    border-bottom-width: 2px; }
+    .grouped-window-list-item-box.top StLabel, .grouped-window-list-item-box.bottom StLabel {
+      padding-left: 2px; }
+  .grouped-window-list-item-box.right {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right-width: 2px; }
+    .grouped-window-list-item-box.right StBin {
+      padding-right: 0; }
+  .grouped-window-list-item-box.left {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-left-width: 2px; }
+    .grouped-window-list-item-box.left StBin {
+      padding-left: 1px; }
+  .grouped-window-list-item-box:checked, .grouped-window-list-item-box:active:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.25); }
+  .grouped-window-list-item-box:active {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.45);
+    background-color: transparent; }
+  .grouped-window-list-item-box:focus, .grouped-window-list-item-box:checked {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 1); }
+  .grouped-window-list-item-box .progress {
+    background-color: rgba(0, 186, 85, 0.27);
+    border-color: rgba(0, 226, 125, 1); }
+.grouped-window-list-item-demands-attention {
+  background-color: rgba(255, 127, 0, 0.27);
+  border-color: rgba(255, 127, 0, 1); }
+.grouped-window-list-thumbnail-label {
+  padding-left: 4px; }
+.grouped-window-list-number-label {
+  z-index: 99;
+  color: #d0d0d0; }
+.grouped-window-list-badge {
+  border-radius: 256px;
+  background-color: #006aff;
+  color: #FFF; }
+.grouped-window-list-button-label {
+  padding-left: 4px; }
+.grouped-window-list-thumbnail-alert {
+  background-gradient-direction: vertical;
+background-gradient-start: #2C84FF;
+background-gradient-end: #006AFF;
+  color: #FFF; }
+.grouped-window-list-thumbnail-menu {
+  border-radius: 3px;
+  background-color: #F5F4F3;
+  border-width: 1px;
+  border-color: #d4d5db;
+  color: #000;
+  padding: 10px; }
+  .grouped-window-list-thumbnail-menu > StBoxLayout {
+    padding: 4px; }
+  .grouped-window-list-thumbnail-menu .item-box {
+    padding: 10px;
+    border-radius: 2px;
+    spacing: 4px; }
+    .grouped-window-list-thumbnail-menu .item-box:outlined, .grouped-window-list-thumbnail-menu .item-box:selected {
+      padding: 8px;
+      background-color: rgba(0,0,0,0.2); }
+  .grouped-window-list-thumbnail-menu .thumbnail {
+    width: 256px; }
+  .grouped-window-list-thumbnail-menu .separator {
+    width: 1px;
+    background: rgba(255,255,255,0.2); }

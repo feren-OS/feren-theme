@@ -1,0 +1,174 @@
+@import url(third-party-APPLET-stylesheets/weather.css);
+@import url(third-party-APPLET-stylesheets/slingshot.css);
+@import url(third-party-APPLET-stylesheets/stopwatch.css);
+@import url(third-party-APPLET-stylesheets/zuromenu.css);
+@import url(/usr/share/themes/feren/cinnamon/cinnamon.css);
+
+/* ===================================================================
+ * Panel (panel.js)
+ * ===================================================================*/
+
+/*Provide Support For Transparent Panels*/
+#panel {
+    background-color: rgba(0,0,0,1);
+    box-shadow: inset 0 0px 0px #000;/*a little hack*/
+    color: white;
+    font-size: 10pt;
+    font-weight: normal;
+    height: 25px;
+    background-blur: 2.5;
+}
+
+.panel-transparent,
+#panel.panel-transparent, .panel-transparent-with-shadow, #panel.panel-transparent-with-shadow, .panel-semi-transparent, #panel.panel-semi-transparent {
+    background-color: rgba(11,11,11,0);
+    box-shadow: inset 0 0px 0px #000;/*a little hack*/
+    color: white;
+    font-size: 10pt;
+    font-weight: normal;
+    height: 25px;
+    background-blur: 2.5;
+}
+
+#panelLeft {
+    spacing: 4px;
+}
+
+#panelCenter {
+    spacing: 4px;
+}
+
+#panelLeft:dnd {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,0,0,0.4);
+    background-gradient-end: rgba(255,0,0,0.4);
+background-blur: 2.5;
+}
+#panelCenter:dnd {
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(0,255,0,0.4);
+	background-gradient-end: rgba(0,255,0,0.4);
+background-blur: 2.5;
+}
+#panelRight:dnd {
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(0,0,255,0.4);
+	background-gradient-end: rgba(0,0,255,0.4);
+background-blur: 2.5;
+}
+
+#panelLeft:ltr {
+    padding-right: 4px;
+}
+
+#panelLeft:rtl {
+    padding-left: 4px;
+}
+
+#panelRight:ltr {
+    padding-left: 0px;
+    spacing: 0px;
+}
+
+#panelRight:rtl {
+    padding-right: 0px;
+    spacing: 0px;
+}
+
+.panel-button,
+.panel-status-button {
+	-natural-hpadding: 5px;
+	-minimum-hpadding: 5px;
+	font-weight: normal;
+	color: #fff;
+	border: 0px solid rgba(255,255,255,0);
+	border-top: 0px;
+	border-bottom: 0px;
+	transition-duration: 200;
+}
+.panel-button:hover,
+.panel-status-button:hover {
+	border: 0px solid rgba(255,255,255,0);
+	border-top: 0px;
+	border-bottom: 0px;
+	color: white;
+	background-gradient-direction: vertical;
+	background-gradient-end: rgba(255,255,255,0.4);
+	background-gradient-start: rgba(255,255,255,0.4);
+}
+
+.panel-menu {
+	-boxpointer-gap: 4px
+}
+.popup-menu-item-dot {
+}
+.system-status-icon {
+	icon-size: 1.09em;
+}
+
+.panel-corner {
+    -panel-corner-radius: 0px;
+    -panel-corner-background-color: black;
+    -panel-corner-inner-border-width: 2px;
+    -panel-corner-inner-border-color: transparent;
+    -panel-corner-outer-border-width: 1px;
+    -panel-corner-outer-border-color: #536272;
+}
+
+.panel-corner:active,
+.panel-corner:overview,
+.panel-corner:focus {
+    -panel-corner-inner-border-color: rgba(255,255,255,0.8);
+}
+
+#appMenu {
+    spacing: 4px;
+}
+
+.panel-button #appMenuIcon {
+    app-icon-bottom-clip: 1px;
+}
+
+.panel-button:active #appMenuIcon,
+.panel-button:checked #appMenuIcon,
+.panel-button:focus #appMenuIcon {
+    app-icon-bottom-clip: 2px;
+}
+
+.panel-button {
+    -natural-hpadding: 6px;
+    -minimum-hpadding: 2px;
+    font-weight: normal;
+    color: white;
+    text-shadow: black 0px 1px 1px;
+    transition-duration: 100;
+}
+
+.panel-button:hover {
+    color: white;
+    text-shadow: black 0px 2px 2px;
+}
+
+.panel-button:active,
+.panel-button:overview,
+.panel-button:focus {
+    
+}
+
+.panel-button:active > .system-status-icon,
+.panel-button:checked > .system-status-icon,
+.panel-button:focus > .system-status-icon {
+    icon-shadow: black 0px 2px 2px;
+}
+
+.panel-menu {
+    -boxpointer-gap: 4px
+}
+
+.popup-menu-item-dot {
+
+}
+
+.system-status-icon {
+    icon-size: 1.14em;
+}

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Eight
+Comment=By Brahim Salem and based on Metro theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Eight
+MetacityTheme=Eight
+IconTheme=Mint-X
+CursorTheme=default
+
+

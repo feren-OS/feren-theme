@@ -48,7 +48,7 @@
 
 @define-color toolbar_and_menus #E5E5E5;
 
-@define-color headerbar_top @headerbar_bottom;
+@define-color headerbar_top #EEEEEE;
 @define-color headerbar_bottom @toolbar_and_menus;
 @define-color headerbar_top_inactive @headerbar_bottom;
 

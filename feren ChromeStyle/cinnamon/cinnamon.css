@@ -8,26 +8,13 @@
  * Panel (panel.js)
  * ===================================================================*/
 
-/*Provide Support For Transparent Panels*/
 #panel {
-    background-color: rgba(0,0,0,1);
-    box-shadow: inset 0 0px 0px #000;/*a little hack*/
-    color: white;
-    font-size: 10pt;
-    font-weight: normal;
-    height: 44px;
-    background-blur: 2.5;
-}
-
-.panel-transparent,
-#panel.panel-transparent, .panel-transparent-with-shadow, #panel.panel-transparent-with-shadow, .panel-semi-transparent, #panel.panel-semi-transparent {
-    box-shadow: inset 0 0px 0px #000;/*a little hack*/
-    color: white;
-    font-size: 10pt;
-    font-weight: normal;
-    height: 44px;
-    background-blur: 2.5;
     background-color: transparent;
+    color: white;
+    font-size: 10pt;
+    font-weight: normal;
+    height: 44px;
+    background-blur: 2.5;
 }
 
 #panelRight {

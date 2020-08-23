@@ -57,7 +57,7 @@ scrollbar_in_view=false
 spin_button_width=32
 submenu_delay=250
 tree_branch_line=true
-reduce_menu_opacity=20
+reduce_menu_opacity=30
 
 [GeneralColors]
 window.color=#E5E5E5
@@ -74,7 +74,6 @@ window.text.color=#000000
 button.text.color=#000000
 disabled.text.color=#a3a5ac
 tooltip.text.color=#000000
-highlight.text.color=#ffffff
 
 link.visited.color=#7247b1
 progress.indicator.text.color=white
@@ -444,7 +443,7 @@ single_top_toolbar=true
 tint_on_mouseover=0
 transparent_pcmanfm_sidepane=false
 transparent_pcmanfm_view=false
-blur_translucent=false
+blur_translucent=true
 no_selection_tint=true
 
 [Window]

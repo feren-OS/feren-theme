@@ -1,0 +1,9 @@
+.hover-user-icon,
+.user-icon {
+    border-radius: 3px;
+    border: 2px solid transparent;
+}
+
+.menu-favorites-button:hover {
+	color: white;
+}

@@ -11,14 +11,14 @@
 <!-- meaningfull constants -->
 
 <constant name="C_title_focused" value="#000000" />
-<constant name="C_title_unfocused" value="#5C5C5C" />
+<constant name="C_title_unfocused" value="#5A5A5A" />
 
 <constant name="C_wm_bg_focused" value="gtk:base[NORMAL]" />
 <constant name="C_wm_bg_unfocused" value="gtk:base[NORMAL]" />
 
-<constant name="C_wm_highlight" value="#EEEEEE" />
+<constant name="C_wm_highlight" value="#E7E7E7" />
 
-<constant name="C_border_focused" value="blend/#EEEEEE/#E5E5E5/0.4" />
+<constant name="C_border_focused" value="blend/#E7E7E7/#DCDCDC/0.4" />
 
 <!-- geometries -->
 
@@ -101,36 +101,36 @@
 
 <draw_ops name="entire_background_focused">
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="#EEEEEE" />
-		<color value="#E5E5E5" />
+		<color value="#E7E7E7" />
+		<color value="#DCDCDC" />
 	</gradient>
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="#EEEEEE" />
-		<color value="#E5E5E5" />
+		<color value="#DCDCDC" />
+		<color value="#DCDCDC" />
 	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="#EEEEEE" />
-		<color value="#E5E5E5" />
+		<color value="#E7E7E7" />
+		<color value="#DCDCDC" />
 	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_unfocused">
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="#EEEEEE" />
-		<color value="#E5E5E5" />
+		<color value="#DCDCDC" />
+		<color value="#DCDCDC" />
 	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_max">
 	<gradient type="vertical" x="0" y="0" width="width" height="height">
-		<color value="#EEEEEE" />
-		<color value="#E5E5E5" />
+		<color value="#E7E7E7" />
+		<color value="#DCDCDC" />
 	</gradient>
 </draw_ops>
 
@@ -158,12 +158,12 @@
 
 <draw_ops name="close_focused_pressed">
 	<image filename="close-pressed.svg" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="close-icon.svg" colorize="#EEEEEE" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="close-icon.svg" colorize="#E7E7E7" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
 <draw_ops name="close_focused_prelight">
 	<image filename="close-hover.svg" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="close-icon.svg" colorize="#EEEEEE" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="close-icon.svg" colorize="#E7E7E7" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused">
@@ -172,12 +172,12 @@
 
 <draw_ops name="close_unfocused_prelight">
 	<image filename="close-hover.svg" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="close-icon.svg" colorize="#EEEEEE" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="close-icon.svg" colorize="#E7E7E7" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused_pressed">
 	<image filename="close-pressed.svg" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="close-icon.svg" colorize="#EEEEEE" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="close-icon.svg" colorize="#E7E7E7" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
 <!--maximize-->

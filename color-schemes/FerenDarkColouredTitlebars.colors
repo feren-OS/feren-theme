@@ -19,17 +19,17 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=68,74,88
-BackgroundNormal=68,74,88
+BackgroundAlternate=74,74,74
+BackgroundNormal=50,50,50
 DecorationFocus=0,106,255
 DecorationHover=0,106,255
 ForegroundActive=61,174,233
 ForegroundInactive=182,182,182
 ForegroundLink=41,128,185
-ForegroundNegative=255,0,0
-ForegroundNeutral=255,85,0
+ForegroundNegative=207,39,55
+ForegroundNeutral=227,107,26
 ForegroundNormal=255,255,255
-ForegroundPositive=0,170,0
+ForegroundPositive=22,145,55
 ForegroundVisited=127,140,141
 
 [Colors:Complementary]
@@ -54,10 +54,10 @@ DecorationHover=0,106,255
 ForegroundActive=252,252,252
 ForegroundInactive=255,255,255
 ForegroundLink=253,188,75
-ForegroundNegative=255,0,0
-ForegroundNeutral=255,85,0
+ForegroundNegative=207,39,55
+ForegroundNeutral=227,107,26
 ForegroundNormal=255,255,255
-ForegroundPositive=0,170,0
+ForegroundPositive=22,145,55
 ForegroundVisited=189,195,199
 
 [Colors:Tooltip]
@@ -68,43 +68,46 @@ DecorationHover=0,106,255
 ForegroundActive=61,174,233
 ForegroundInactive=182,182,182
 ForegroundLink=41,128,185
-ForegroundNegative=255,0,0
-ForegroundNeutral=255,85,0
+ForegroundNegative=207,39,55
+ForegroundNeutral=227,107,26
 ForegroundNormal=255,255,255
-ForegroundPositive=0,170,0
+ForegroundPositive=22,145,55
 ForegroundVisited=127,140,141
 
 [Colors:View]
 BackgroundAlternate=68,74,88
-BackgroundNormal=27,27,27
+BackgroundNormal=50,50,50
 DecorationFocus=0,106,255
 DecorationHover=0,106,255
 ForegroundActive=61,174,233
 ForegroundInactive=182,182,182
 ForegroundLink=41,128,185
-ForegroundNegative=255,0,0
-ForegroundNeutral=255,85,0
+ForegroundNegative=207,39,55
+ForegroundNeutral=227,107,26
 ForegroundNormal=255,255,255
-ForegroundPositive=0,170,0
+ForegroundPositive=22,145,55
 ForegroundVisited=170,85,255
 
 [Colors:Window]
-BackgroundAlternate=189,195,199
-BackgroundNormal=27,27,27
+BackgroundAlternate=63,63,63
+BackgroundNormal=34,34,34
 DecorationFocus=0,106,255
 DecorationHover=0,106,255
 ForegroundActive=61,174,233
 ForegroundInactive=182,182,182
 ForegroundLink=41,128,185
-ForegroundNegative=255,0,0
-ForegroundNeutral=255,85,0
+ForegroundNegative=207,39,55
+ForegroundNeutral=227,107,26
 ForegroundNormal=255,255,255
-ForegroundPositive=0,170,0
+ForegroundPositive=22,145,55
 ForegroundVisited=127,140,141
 
+[DesktopIcons]
+Animated[$d]
+
 [General]
-ColorScheme=FerenDark
-Name=Feren Dark Coloured Titlebars
+ColorScheme=FerenDarkColouredTitlebars
+Name=Feren OS Dark (Coloured Titlebars)
 shadeSortColumn=true
 
 [KDE]
@@ -114,6 +117,6 @@ contrast=4
 activeBackground=0,106,255
 activeBlend=255,255,255
 activeForeground=255,255,255
-inactiveBackground=0,0,0
-inactiveBlend=21,21,21
-inactiveForeground=182,182,182
+inactiveBackground=34,34,34
+inactiveBlend=34,34,34
+inactiveForeground=165,165,165

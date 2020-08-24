@@ -69,7 +69,7 @@
 </draw_ops>
 
 <draw_ops name="draw_title_text_inactive">
-    <title x="((width - title_width) / 2)" y="(height - title_height) / 2" color="#5C5C5C"/>
+    <title x="((width - title_width) / 2)" y="(height - title_height) / 2" color="#5A5A5A"/>
 </draw_ops>
 
 <!--
@@ -105,7 +105,7 @@
     <image filename="button_close.svg" colorize="#000000" x="0" y="0" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="button_close_backdrop">
-    <image filename="button_close.svg" colorize="#5C5C5C" x="0" y="0" width="object_width" height="object_height"/>
+    <image filename="button_close.svg" colorize="#5A5A5A" x="0" y="0" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="button_close_prelight">
     <image filename="button_close.svg" colorize="C_accent" x="0" y="0" width="object_width" height="object_height"/>
@@ -119,7 +119,7 @@
     <image filename="button_max.svg" colorize="#000000" x="0" y="0" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="button_max_backdrop">
-    <image filename="button_max.svg" colorize="#5C5C5C" x="0" y="0" width="object_width" height="object_height"/>
+    <image filename="button_max.svg" colorize="#5A5A5A" x="0" y="0" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="button_max_prelight">
     <image filename="button_max.svg" colorize="C_accent" x="0" y="0" width="object_width" height="object_height"/>
@@ -133,7 +133,7 @@
     <image filename="button_min.svg" colorize="#000000" x="0" y="0" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="button_min_backdrop">
-    <image filename="button_min.svg" colorize="#5C5C5C" x="0" y="0" width="object_width" height="object_height"/>
+    <image filename="button_min.svg" colorize="#5A5A5A" x="0" y="0" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="button_min_prelight">
     <image filename="button_min.svg" colorize="C_accent" x="0" y="0" width="object_width" height="object_height"/>
@@ -153,7 +153,7 @@
     <image filename="button_menu_pressed.svg" colorize="C_accent" x="0" y="0" width="object_width" height="object_height"/>
 </draw_ops>
 <draw_ops name="button_menu_inactive">
-    <image filename="button_menu.svg" colorize="#5C5C5C" alpha="0.5" x="0" y="0" width="object_width" height="object_height"/>
+    <image filename="button_menu.svg" colorize="#5A5A5A" alpha="0.5" x="0" y="0" width="object_width" height="object_height"/>
 </draw_ops>
 
 <!--

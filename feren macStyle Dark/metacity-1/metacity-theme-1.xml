@@ -68,7 +68,7 @@
 </draw_ops>
 
 <draw_ops name="draw_title_text_inactive">
-    <title x="((width - title_width) / 2)" y="(height - title_height) / 2" color="#B6B6B6"/>
+    <title x="((width - title_width) / 2)" y="(height - title_height) / 2" color="#A5A5A5"/>
 </draw_ops>
 
 <!--
@@ -76,10 +76,10 @@
 -->
 
 <constant name="C_title_focused" value="#FFFFFF" />
-<constant name="C_title_unfocused" value="#B6B6B6" />
+<constant name="C_title_unfocused" value="#A5A5A5" />
 
-<constant name="C_wm_bg_focused" value="#000000" />
-<constant name="C_wm_bg_unfocused" value="#000000" />
+<constant name="C_wm_bg_focused" value="#222222" />
+<constant name="C_wm_bg_unfocused" value="#222222" />
 
 <constant name="C_wm_highlight" value="#ffffff" />
 

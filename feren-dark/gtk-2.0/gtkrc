@@ -1,25 +1,41 @@
-gtk-color-scheme = "base_color: #404552"
-gtk-color-scheme = "text_color: #d3dae3"
-gtk-color-scheme = "bg_color: #383c4a"
-gtk-color-scheme = "fg_color: #d3dae3"
-gtk-color-scheme = "tooltip_bg_color: #4B5162"
-gtk-color-scheme = "tooltip_fg_color: #ffffff"
-gtk-color-scheme = "selected_bg_color: #5294e2"
-gtk-color-scheme = "selected_fg_color: #ffffff"
-gtk-color-scheme = "insensitive_bg_color: #3e4350"
-gtk-color-scheme = "insensitive_fg_color: #7c818c"
-gtk-color-scheme = "notebook_bg: #404552"
-gtk-color-scheme = "dark_sidebar_bg: #353945"
-gtk-color-scheme = "link_color: #5294e2"
-gtk-color-scheme = "menu_bg: #383c4a"
+# Based on Bridge by ScionicSpectre
+# vim:set ts=2 sw=2 sts=2 ai et:
+#
+# This is the GTK+ 2 version of Adwaita. It's whole purpose is to look as the
+# GTK+ 3 version as much as possible until GTK+ 2 dies completely.
+#
+# Note: comments for explaining styles are on the bottom of each file beside the
+# widget matches.
 
-gtk-icon-sizes = "gtk-button=16,16" # This makes button icons smaller.
-gtk-auto-mnemonics = 1
+# Declare the colours used throughout the theme.
+# There shouldn't be any fiddling with them in the theme files themselves in
+# order to not mess up the dark theme.
+
+# Text/base
+gtk-color-scheme = "text_color:white\nbase_color:#323232"
+# Foreground/background
+gtk-color-scheme = "fg_color:white\nbg_color:#222222"
+# Selected foreground/background
+gtk-color-scheme = "selected_fg_color:#ffffff\nselected_bg_color:#006aff"
+# Insensitive foreground/background
+gtk-color-scheme = "insensitive_fg_color:#6a6a6a\ninsensitive_bg_color:#202020"
+# Menus
+gtk-color-scheme = "menu_color:#323232"
+# Links
+gtk-color-scheme = "link_color:#2980b9\nvisited_link_color:#aa55ff"
+# Treeview headers
+gtk-color-scheme = "column_header_color:white\nhover_column_header_color:white"
+# Window decoration
+gtk-color-scheme = "window_color:#222222"
+# Tooltips
+gtk-color-scheme = "tooltip_fg_color:white\ntooltip_bg_color:#1b1b1b"
+
+# Set GTK settings
+gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
 
+# And hand over the control to the theme files
 include "main.rc"
 include "apps.rc"
-include "panel.rc"
-include "xfce-notify.rc"
-include "menubar-toolbar/menubar-toolbar-dark.rc"
-include "scrollbar"
+include "hacks.rc"
+include "hacks-dark.rc"

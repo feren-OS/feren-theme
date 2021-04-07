@@ -106,7 +106,6 @@ ForegroundVisited=127,140,141
 Animated[$d]
 
 [General]
-ColorScheme=FerenDarkColouredTitlebars
 Name=Feren OS Dark (Coloured Titlebars)
 shadeSortColumn=true
 

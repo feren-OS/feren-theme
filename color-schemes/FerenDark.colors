@@ -46,6 +46,34 @@ ForegroundNormal=239,240,241
 ForegroundPositive=0,170,0
 ForegroundVisited=61,174,230
 
+[Colors:Header]
+BackgroundAlternate=63,63,63
+BackgroundNormal=34,34,34
+DecorationFocus=0,106,255
+DecorationHover=0,106,255
+ForegroundActive=61,174,233
+ForegroundInactive=182,182,182
+ForegroundLink=41,128,185
+ForegroundNegative=207,39,55
+ForegroundNeutral=227,107,26
+ForegroundNormal=255,255,255
+ForegroundPositive=22,145,55
+ForegroundVisited=127,140,141
+
+[Colors:Header][Inactive]
+BackgroundAlternate=63,63,63
+BackgroundNormal=34,34,34
+DecorationFocus=0,106,255
+DecorationHover=0,106,255
+ForegroundActive=61,174,233
+ForegroundInactive=182,182,182
+ForegroundLink=41,128,185
+ForegroundNegative=207,39,55
+ForegroundNeutral=227,107,26
+ForegroundNormal=165,165,165
+ForegroundPositive=22,145,55
+ForegroundVisited=127,140,141
+
 [Colors:Selection]
 BackgroundAlternate=29,153,243
 BackgroundNormal=0,106,255
@@ -106,7 +134,6 @@ ForegroundVisited=127,140,141
 Animated[$d]
 
 [General]
-ColorScheme=FerenDark
 Name=Feren OS Dark
 shadeSortColumn=true
 

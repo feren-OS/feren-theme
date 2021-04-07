@@ -19,3 +19,6 @@ defaultHeight=1080
 
 [ContrastEffect]
 enabled=false
+
+[AdaptiveTransparency]
+enabled=true

@@ -2330,6 +2330,8 @@ statusbar > frame > border { border: none; }
 
 .floating-bar { background: linear-gradient(to bottom, rgba(255, 255, 255, 0.07), transparent), image(@theme_selected_bg_color_breeze); color: @theme_selected_fg_color_breeze; border-radius: 4px 4px 0 0; box-shadow: inset 0 0 0 1px @theme_selected_bg_color_breeze, inset 0 0 0 1px alpha(@ferengtk_border_generic,0.8); padding: 1px; }
 
+.floating-bar:backdrop { background: linear-gradient(to bottom, rgba(255, 255, 255, 0.07), transparent), image(@theme_unfocused_selected_bg_color_breeze); box-shadow: inset 0 0 0 1px @theme_unfocused_selected_bg_color_breeze, inset 0 0 0 1px alpha(@ferengtk_border_generic,0.7); color: @theme_text_color_breeze; }
+
 .nemo-window .nemo-window-pane widget.entry { border: 1.4px solid @theme_selected_bg_color_breeze; border-radius: 4px; color: @theme_fg_color_breeze; background-color: @theme_base_color_breeze; }
 
 .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected { background-color: @theme_selected_bg_color_breeze; color: @theme_selected_fg_color_breeze; }
@@ -2347,15 +2349,15 @@ statusbar > frame > border { border: none; }
 
 .overlay-toolbar .mark { color: @theme_text_color_breeze; }
 
-scale.tint trough { box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.17) !important; }
+scale.tint trough { padding: 1px; border: transparent; }
 
-scale.temperature trough { background-image: linear-gradient(to right, @BLUEBERRY_500, @SILVER_100, @ORANGE_500); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.17) !important; }
+scale.temperature trough { background-image: linear-gradient(to right, @BLUEBERRY_500_breeze, @BANANA_500_breeze); padding: 1px; border: transparent; }
 
-scale.temperature:dir(rtl) trough { background: linear-gradient(to left, @BLUEBERRY_500, @SILVER_100, @ORANGE_500); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.17) !important; }
+scale.temperature:dir(rtl) trough { background-image: linear-gradient(to left, @BLUEBERRY_500_breeze, @BANANA_500_breeze); }
 
-scale.warmth trough { background: linear-gradient(to right, @ORANGE_100, @ORANGE_500); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.17) !important; }
+scale.warmth trough { background-image: linear-gradient(to right, alpha(@ORANGE_100_breeze,0.5), @ORANGE_500_breeze); padding: 1px; border: transparent; }
 
-scale.warmth:dir(rtl) trough { background: linear-gradient(to left, @theme_bg_color_breeze, @ORANGE_500); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.17) !important; }
+scale.warmth:dir(rtl) trough { background-image: linear-gradient(to left, alpha(@ORANGE_100_breeze,0.5), @ORANGE_500_breeze); }
 
 frame.flat > border, frame > border.flat, .frame.flat { border-style: none; }
 
@@ -2385,17 +2387,15 @@ window.background.chromium.maximized headerbar button.titlebutton.maximize { bac
 /************************** Misc. (Elementary OS) * */
 .h1 { font-size: 24pt; }
 
-.h2 { font-weight: 300; font-size: 18pt; }
+.h2 { font-size: 18pt; }
 
 .h3 { font-size: 11pt; }
 
-.h4, .category-label { color: alpha(@theme_text_color_breeze,0.7); }
+label.h4, .h4 label { opacity: 0.8; padding-bottom: 0.5em; padding-top: 0.5em; }
 
-.h4 { padding-bottom: 6px; padding-top: 6px; }
+.dim-label, label.separator, .titlebar:not(headerbar) .subtitle, headerbar .subtitle { opacity: 0.75; }
 
-list .h4 { padding-left: 6px; }
-
-label.primary { font-weight: 700; font-size: 1.2em; }
+:link:hover label { text-decoration: underline; }
 
 /******** Geary * */
 paned statusbar frame { border: none; }

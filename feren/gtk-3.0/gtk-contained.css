@@ -964,9 +964,9 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .tiled .titlebar:not(headerbar), .tiled-top .titlebar:not(headerbar), .tiled-right .titlebar:not(headerbar), .tiled-bottom .titlebar:not(headerbar), .tiled-left .titlebar:not(headerbar), .maximized .titlebar:not(headerbar), .fullscreen .titlebar:not(headerbar), .tiled headerbar, .tiled-top headerbar, .tiled-right headerbar, .tiled-bottom headerbar, .tiled-left headerbar, .maximized headerbar, .fullscreen headerbar { border-radius: 0; }
 
-.default-decoration.titlebar:not(headerbar), headerbar.default-decoration { min-height: 28px; padding: 4px; }
+.default-decoration.titlebar:not(headerbar), headerbar.default-decoration { min-height: 28px; padding: 2px; padding-left: 5.5px; padding-right: 5.5px; }
 
-.default-decoration.titlebar:not(headerbar) button.titlebutton, headerbar.default-decoration button.titlebutton { min-height: 28px; min-width: 28px; margin: 0; padding: 0; }
+.default-decoration.titlebar:not(headerbar) button.titlebutton, headerbar.default-decoration button.titlebutton { min-width: 36px; min-height: 30px; padding: 0; margin: 0; margin-right: -3.5px; margin-left: -3.5px; padding: 0; }
 
 .titlebar:not(headerbar) separator.titlebutton, headerbar separator.titlebutton { opacity: 0; }
 
@@ -978,7 +978,7 @@ headerbar switch { margin-top: 8px; margin-bottom: 8px; }
 
 headerbar.titlebar headerbar:not(.titlebar) { background: none; box-shadow: none; }
 
-.background .titlebar:backdrop, .background .titlebar { border-top-left-radius: 0; border-top-right-radius: 0; }
+.background .titlebar:backdrop, .background .titlebar { border-top-left-radius: 4px; border-top-right-radius: 4px; }
 
 .background.tiled .titlebar:backdrop, .background.tiled .titlebar, .background.tiled-top .titlebar:backdrop, .background.tiled-top .titlebar, .background.tiled-right .titlebar:backdrop, .background.tiled-right .titlebar, .background.tiled-bottom .titlebar:backdrop, .background.tiled-bottom .titlebar, .background.tiled-left .titlebar:backdrop, .background.tiled-left .titlebar, .background.maximized .titlebar:backdrop, .background.maximized .titlebar, .background.solid-csd .titlebar:backdrop, .background.solid-csd .titlebar { border-top-left-radius: 0; border-top-right-radius: 0; }
 
@@ -1854,11 +1854,11 @@ calendar:backdrop { color: @theme_unfocused_text_color_breeze; border-color: alp
 calendar:indeterminate { color: alpha(currentColor,0.1); }
 
 /*********** Dialogs * */
-messagedialog .titlebar { min-height: 20px; background-image: none; background-color: @theme_bg_color_breeze; border-style: none; border-top-left-radius: 0; border-top-right-radius: 0; }
+messagedialog .titlebar { min-height: 20px; border-style: none; border-top-left-radius: 4px; border-top-right-radius: 4px; }
 
 messagedialog .dialog-action-area { padding: 8px; }
 
-messagedialog.csd.background { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+messagedialog.csd.background { border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
 
 messagedialog.csd .dialog-action-area button { padding: 10px 14px; border-right-style: none; border-bottom-style: none; border-radius: 0; -gtk-outline-radius: 0; }
 
@@ -2172,9 +2172,9 @@ colorchooser .popover.osd { border-radius: 4px; }
 .scale-popup button:hover { background-color: alpha(@theme_fg_color_breeze,0.1); border-radius: 4px; }
 
 /********************** Window Decorations * */
-decoration { border-radius: 0 0 0 0; border-width: 0px; box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25), 0px 2px 8px rgba(0, 0, 0, 0.3), 0px 0px 0px 1px mix(@theme_titlebar_background_breeze,@ferengtk_border_generic,0.75); margin: 10px; }
+decoration { border-radius: 4px 4px 0 0; border-width: 0px; box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25), 0px 2px 8px rgba(0, 0, 0, 0.3); margin: 10px; }
 
-decoration:backdrop { box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25), 0px 2px 8px rgba(0, 0, 0, 0.3), 0px 0px 0px 1px mix(@theme_titlebar_background_backdrop_breeze,rgba(0, 0, 0, 0.133),0.25); transition: 200ms ease-out; }
+decoration:backdrop { box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25), 0px 2px 8px rgba(0, 0, 0, 0.3); transition: 200ms ease-out; }
 
 .maximized decoration, .fullscreen decoration, .tiled decoration, .tiled-top decoration, .tiled-right decoration, .tiled-bottom decoration, .tiled-left decoration { border-radius: 0; }
 
@@ -2186,13 +2186,13 @@ decoration:backdrop { box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25), 0px 2px 8px 
 
 tooltip.csd decoration { border-radius: 4px; box-shadow: none; }
 
-messagedialog.csd decoration { border-radius: 0; box-shadow: 0 1px 2px alpha(black,0.2), 0 0 0 1px alpha(alpha(black,0.23),0.9); }
+messagedialog.csd decoration { border-radius: 4px; box-shadow: 0 1px 2px alpha(black,0.2), 0 0 0 1px alpha(alpha(black,0.23),0.9); }
 
-.solid-csd decoration { margin: 1px; padding: 0; background-color: @theme_titlebar_background_breeze; border: none; border-radius: 0; box-shadow: none; }
+.solid-csd decoration { margin: 0; padding: 0; background-color: @theme_bg_color_breeze; border-width: 0; border-radius: 0; box-shadow: none; }
 
-.solid-csd decoration:backdrop { background-color: @theme_titlebar_background_backdrop_breeze; }
+.solid-csd decoration:backdrop { background-color: @theme_unfocused_bg_color_breeze; }
 
-button.titlebutton { min-width: 36px; min-height: 30px; padding: 0; margin: 0; border-radius: 0; border-width: 0; border-color: transparent; margin-right: -3.5px; margin-left: -3.5px; background-image: none; background-color: transparent; color: currentColor; background-position: center; background-repeat: no-repeat; box-shadow: none; }
+button.titlebutton { min-width: 36px; min-height: 30px; padding: 0; margin: 0; border-radius: 3px; border-width: 0; border-color: transparent; margin-right: -3.5px; margin-left: -3.5px; background-image: none; background-color: transparent; color: currentColor; background-position: center; background-repeat: no-repeat; box-shadow: none; }
 
 headerbar button.titlebutton:hover, .titlebar .button.titlebutton:hover { box-shadow: none; border-color: transparent; background-color: alpha(currentColor,0.1); }
 

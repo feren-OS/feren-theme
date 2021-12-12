@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Feren OS Light
+Name=Feren OS Light (W.I.P.)
 X-KDE-PluginInfo-Author=The Feren OS Dev
 X-KDE-PluginInfo-Email=ferenosdev@outlook.com
 X-KDE-PluginInfo-Name=feren-light
@@ -11,7 +11,7 @@ X-KDE-PluginInfo-EnabledByDefault=true
 X-Plasma-API=5.0
 
 [Wallpaper]
-defaultWallpaperTheme=Aluminium-Default
+defaultWallpaperTheme=Murdock-Default
 defaultFileSuffix=.png
 defaultWidth=1920
 defaultHeight=1080

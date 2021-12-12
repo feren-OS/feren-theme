@@ -20,7 +20,7 @@ IntensityEffect=0
 
 [Colors:Button]
 BackgroundAlternate=74,74,74
-BackgroundNormal=50,50,50
+BackgroundNormal=58,58,58
 DecorationFocus=0,106,255
 DecorationHover=0,106,255
 ForegroundActive=61,174,233
@@ -45,34 +45,6 @@ ForegroundNeutral=255,85,0
 ForegroundNormal=239,240,241
 ForegroundPositive=0,170,0
 ForegroundVisited=61,174,230
-
-[Colors:Header]
-BackgroundAlternate=63,63,63
-BackgroundNormal=34,34,34
-DecorationFocus=0,106,255
-DecorationHover=0,106,255
-ForegroundActive=61,174,233
-ForegroundInactive=182,182,182
-ForegroundLink=41,128,185
-ForegroundNegative=207,39,55
-ForegroundNeutral=227,107,26
-ForegroundNormal=255,255,255
-ForegroundPositive=22,145,55
-ForegroundVisited=127,140,141
-
-[Colors:Header][Inactive]
-BackgroundAlternate=63,63,63
-BackgroundNormal=34,34,34
-DecorationFocus=0,106,255
-DecorationHover=0,106,255
-ForegroundActive=61,174,233
-ForegroundInactive=182,182,182
-ForegroundLink=41,128,185
-ForegroundNegative=207,39,55
-ForegroundNeutral=227,107,26
-ForegroundNormal=165,165,165
-ForegroundPositive=22,145,55
-ForegroundVisited=127,140,141
 
 [Colors:Selection]
 BackgroundAlternate=29,153,243
@@ -104,7 +76,7 @@ ForegroundVisited=127,140,141
 
 [Colors:View]
 BackgroundAlternate=68,74,88
-BackgroundNormal=50,50,50
+BackgroundNormal=58,58,58
 DecorationFocus=0,106,255
 DecorationHover=0,106,255
 ForegroundActive=61,174,233
@@ -134,16 +106,16 @@ ForegroundVisited=127,140,141
 Animated[$d]
 
 [General]
-Name=Feren OS Dark
+Name=Feren OS Dark (W.I.P.)
 shadeSortColumn=true
 
 [KDE]
 contrast=4
 
 [WM]
-activeBackground=34,34,34
-activeBlend=34,34,34
+activeBackground=0,106,255
+activeBlend=255,255,255
 activeForeground=255,255,255
-inactiveBackground=34,34,34
+inactiveBackground=0,106,255
 inactiveBlend=34,34,34
-inactiveForeground=165,165,165
+inactiveForeground=200,200,200

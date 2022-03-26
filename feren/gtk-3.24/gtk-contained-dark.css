@@ -2384,18 +2384,6 @@ window.background.chromium menubar:backdrop, window.background.chromium .menubar
 
 window.background.chromium entry { background-color: @theme_base_color_breeze; }
 
-window.background.chromium headerbar button.titlebutton, window.background.chromium .titlebar button.titlebutton { margin-right: -2.5px; margin-left: -2.5px; }
-
-window.background.chromium headerbar button.titlebutton.close, window.background.chromium .titlebar button.titlebutton.close { background-image: none; }
-
-window.background.chromium headerbar button.titlebutton.maximize, window.background.chromium .titlebar button.titlebutton.maximize { background-image: none; }
-
-window.background.chromium headerbar button.titlebutton.minimize, window.background.chromium .titlebar button.titlebutton.minimize { background-image: none; }
-
-window.background.chromium.maximized headerbar button.titlebutton { margin-right: -2.5px; margin-left: -2.5px; }
-
-window.background.chromium.maximized headerbar button.titlebutton.maximize { background-image: none; }
-
 /************************** Misc. (Elementary OS) * */
 .h1 { font-size: 24pt; }
 

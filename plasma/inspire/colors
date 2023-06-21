@@ -52,8 +52,8 @@ ForegroundInactive=182,182,182
 ForegroundNormal=255,255,255
 
 [Colors:View]
-BackgroundAlternate=68,74,88
-BackgroundNormal=50,50,50
+BackgroundAlternate=29,29,29
+BackgroundNormal=0,0,0
 ForegroundInactive=182,182,182
 ForegroundNormal=255,255,255
 
